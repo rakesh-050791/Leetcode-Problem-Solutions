@@ -1,7 +1,8 @@
 								# https://leetcode.com/study-plan/leetcode-75
 
 
-# 1 : 1480. Running Sum of 1d Array
+# 1 : 1480. Running Sum of 1d Array | #array #prefix-sum #running-sum
+
 
 # Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
@@ -42,7 +43,8 @@ class Solution:
 
 
 
-# 2 : 724. Find Pivot Index
+# 2 : 724. Find Pivot Index | #aray #sum-of-array-elements
+
 # Given an array of integers nums, calculate the pivot index of this array.
 
 # The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
@@ -107,7 +109,7 @@ class Solution:
 # Space Complexity: O(1), the space used by leftsum and totalSum.
 
 
-# 3 : 205. Isomorphic Strings
+# 3 : 205. Isomorphic Strings | #hashing #Strings #Sub-strings
 
 # Given two strings s and t, determine if they are isomorphic.
 
