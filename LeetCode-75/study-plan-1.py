@@ -209,7 +209,7 @@ class Solution:
 # Space Complexity: O(1), no extra space used
 
 
-# 4 : 21. Merge Two Sorted Lists # Linked-list
+# 5 : 21. Merge Two Sorted Lists # Linked-list
 
 # You are given the heads of two sorted linked lists list1 and list2.
 
@@ -263,4 +263,46 @@ class Solution:
         return dummy.next
 
 
+# 6 : 206. Reverse Linked List #Linked=list #two-pointers
+
+# Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+ 
+
+# Example 1:
+
+
+# Input: head = [1,2,3,4,5]
+# Output: [5,4,3,2,1]
+# Example 2:
+
+
+# Input: head = [1,2]
+# Output: [2,1]
+# Example 3:
+
+# Input: head = []
+# Output: []
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+#Below is the iterative approach using #two-pointers
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        
+        prev, curr = None, head
+    
+        while curr:
+            temp = curr.next
+
+            curr.next = prev
+            prev = curr
+
+            curr = temp
+        
+        return prev
 
