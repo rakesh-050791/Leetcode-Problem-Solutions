@@ -306,3 +306,36 @@ class Solution:
         
         return prev
 
+
+# Complexity Analysis
+
+# Time Complexity: O(N).
+
+# Space Complexity: O(1), no extra space used.
+
+# Below is the recursive approach for the same 
+
+class Solution:
+    def reverseList(self, head: ListNode) -> Optional[ListNode]:
+        
+        if head is None:
+            return None
+
+        newHead = head
+
+        if head.next:
+            newHead = self.reverseList(head.next)
+            head.next.next = head
+        
+        head.next = None
+
+        return newHead
+
+# Complexity Analysis
+
+# Time Complexity: O(N).
+
+# Space Complexity: O(N).
+
+
+
