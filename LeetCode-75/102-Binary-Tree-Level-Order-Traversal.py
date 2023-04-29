@@ -54,6 +54,20 @@ class Solution:
         
         return output
 
+
+# Driver code to test the actual code 
+
+# root = TreeNode(3)
+# root.left = TreeNode(9)
+# root.right = TreeNode(20)
+# root.right.left = TreeNode(15)
+# root.right.right = TreeNode(7)
+
+# obj = Solution()
+# response = obj.levelOrder(root)
+# print("response =", response)
+
+
 # Complexity :
 # Time complexity : O(n), will iterate through / visit every node atleast once
 # Space complexity : O(n), using deque
