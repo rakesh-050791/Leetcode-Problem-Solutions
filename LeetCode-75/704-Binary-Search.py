@@ -1,4 +1,4 @@
-# 704. Binary Search | #Binary-search #two-pointer-approach #O (log₂n)
+# 704. Binary Search | #Binary-search #two-pointer-approach #O(log₂n)
 
 # Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
@@ -40,8 +40,8 @@ class Solution:
 
 
 # Complexity :
-# Time complexity : O(log₂n), will iterate through / visit every node atleast once
-# Space complexity : O(n), using deque
+# Time complexity : O(log₂n)
+# Space complexity : O(1)
 
 
 # Video reference 
