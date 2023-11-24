@@ -42,5 +42,6 @@ class Solution:
 # This solution has a time complexity of O(n), where n is the length of the array, as it makes a single pass through the array. It also minimizes the total number of operations done, as it only performs swaps when necessary
 
 
+# Code Visualizer
 
-
+# https://pythontutor.com/render.html#code=class%20Solution%3A%0A%20%20%20%20def%20moveZeroes%28self,%20nums%29%3A%0A%20%20%20%20%20%20%20%20nonZeroIndex%20%3D%200%0A%0A%20%20%20%20%20%20%20%20for%20i%20in%20range%28len%28nums%29%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20nums%5Bi%5D%20!%3D%200%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nums%5Bi%5D,%20nums%5BnonZeroIndex%5D%20%3D%20nums%5BnonZeroIndex%5D,%20nums%5Bi%5D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nonZeroIndex%20%2B%3D%201%0A%0A%0Anums%20%3D%20%5B0,1,0,3,12%5D%0Asol%20%3D%20Solution%28%29%0Aresponse%20%3D%20sol.moveZeroes%28nums%29%0Aprint%28response%29&cumulative=false&curInstr=25&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false
