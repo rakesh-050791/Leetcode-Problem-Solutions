@@ -63,3 +63,35 @@ class Solution:
     		hare = nums[hare]
 
     	return hare
+
+
+
+# Dry-run
+
+# Let us do a dry run to understand better the approach behind the code :
+# nums = [1,3,4,2,2]
+# slow = nums[0] = 1
+# fast = nums[0] = 1
+# slow = nums[1] = 3
+# fast = nums[nums[1]] = nums[3] = 2
+# since these two are not equal we update the values ,
+# slow = nums[3] = 2
+# fast = nums[nums[2]] = nums[4] = 2
+# Now since these are equal , we exit the loop.
+# Now fast = nums[0] = 1
+# slow!=fast , 
+# slow = nums[2] = 4
+# fast = nums[1] = 3
+# slow!=fast so ,
+# slow = nums[4] = 2
+# fast = nums[3] = 2
+# Now slow and fast are equal so , the repeating element is 2.
+# Intution : The basic thinking is that we keep two counter variables, slow is incremented by +1 and fast by +2 and 
+# at one point they will be pointing to the repeating elements, which is returned by the slow pointer. 
+
+
+# Links for different approaches
+
+## https://medium.com/nerd-for-tech/find-the-duplicate-number-aaf426ded83d 
+
+## https://takeuforward.org/data-structure/find-the-duplicate-in-an-array-of-n1-integers/
